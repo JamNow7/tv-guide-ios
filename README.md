@@ -1,3 +1,19 @@
+# 📺 TV Guide iOS
+
+App iOS moderna hecha en SwiftUI que muestra programación de TV en tiempo real usando la API de TVMaze.
+
+Permite explorar programas con imágenes, filtros por canal, horarios y vista de detalles completa tipo "TV streaming app".
+
+## 🚀 Demo Features
+
+- Programación en tiempo real (TVMaze API)
+- Filtros por canal estilo chips (tipo YouTube)
+- Vista de detalle con imagen, rating y resumen limpio
+- Navegación fluida entre lista y detalle
+- UI optimizada para iOS 17+
+
+---
+
 # Guía TV
 
 Una aplicación iOS moderna escrita en Swift y SwiftUI que muestra la programación de TV en tiempo real utilizando la API de TVMaze. Presenta información completa de programas y episodios con imágenes, ratings y horarios, con navegación a pantalla de detalles y filtros por canal.
@@ -81,7 +97,7 @@ GuiaTv/
 │   ├── Services/
 │   │   └── TVService.swift          # Servicio de API
 │   └── GuiaTVApp.swift              # Entry point de la app
-├── docs/                            # 📸 Fotos de evidencia
+├── docs/                            # Fotos de evidencia
 ├── README.md
 └── Guía TV.xcodeproj
 ```
