@@ -20,9 +20,12 @@ struct TVProgram: Identifiable, Codable {
     let type: String?
     let season: Int?
     let number: Int?
+    let networkName: String?
+    let countryCode: String?
+    let countryName: String?
 
     enum CodingKeys: String, CodingKey {
-        case name, airdate, airtime, summary, showName, imageURL, runtime, rating, type, season, number
+        case name, airdate, airtime, summary, showName, imageURL, runtime, rating, type, season, number, networkName, countryCode, countryName
     }
 
     // Inicializador para crear desde TVMazeScheduleItem
@@ -33,10 +36,13 @@ struct TVProgram: Identifiable, Codable {
         self.summary = item.summary
         self.showName = item.show.name
         self.imageURL = item.show.image?.medium ?? item.show.image?.original
-          self.runtime = item.runtime
-          self.rating = item.rating?.average
-          self.type = item.type
-          self.season = item.season
-          self.number = item.number
+        self.runtime = item.runtime
+        self.rating = item.rating?.average
+        self.type = item.type
+        self.season = item.season
+        self.number = item.number
+        self.networkName = item.show.network?.name
+        self.countryCode = item.show.network?.country?.code
+        self.countryName = item.show.network?.country?.name
     }
 }

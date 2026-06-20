@@ -39,6 +39,7 @@ struct TVMazeScheduleItem: Codable {
 struct ShowDTO: Codable {
     let name: String
     let image: ImageDTO?
+    let network: NetworkDTO?
 }
 struct RatingDTO: Codable {
       let average: Double?
@@ -48,3 +49,17 @@ struct RatingDTO: Codable {
       let medium: String?
       let original: String?
   }
+
+struct CountryDTO: Codable {
+      let name: String
+      let code: String
+      let timezone: String
+  }
+
+  struct NetworkDTO: Codable {
+      let id: Int
+      let name: String
+      let country: CountryDTO?
+      let officialSite: String?
+  }
+

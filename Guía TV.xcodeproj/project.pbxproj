@@ -14,6 +14,8 @@
 		11355FA22FE64DF200C5FB1B /* GuiaTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11355F982FE64DF200C5FB1B /* GuiaTVApp.swift */; };
 		11355FA32FE64DF200C5FB1B /* TVProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11355F992FE64DF200C5FB1B /* TVProgram.swift */; };
 		11355FA82FE64E6F00C5FB1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11355FA62FE64E6F00C5FB1B /* ContentView.swift */; };
+		11355FAA2FE6C8E100C5FB1B /* ProgramDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11355FA92FE6C8DA00C5FB1B /* ProgramDetailView.swift */; };
+		11355FAC2FE6CC3C00C5FB1B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11355FAB2FE6CC3C00C5FB1B /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		11355F9B2FE64DF200C5FB1B /* TVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVService.swift; sourceTree = "<group>"; };
 		11355F9D2FE64DF200C5FB1B /* TVGuideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVGuideViewModel.swift; sourceTree = "<group>"; };
 		11355FA62FE64E6F00C5FB1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		11355FA92FE6C8DA00C5FB1B /* ProgramDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramDetailView.swift; sourceTree = "<group>"; };
+		11355FAB2FE6CC3C00C5FB1B /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -87,6 +91,8 @@
 		11355FA72FE64E6F00C5FB1B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				11355FAB2FE6CC3C00C5FB1B /* String+Extensions.swift */,
+				11355FA92FE6C8DA00C5FB1B /* ProgramDetailView.swift */,
 				11355FA62FE64E6F00C5FB1B /* ContentView.swift */,
 			);
 			path = Views;
@@ -169,7 +175,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				11355FA02FE64DF200C5FB1B /* TVGuideViewModel.swift in Sources */,
+				11355FAC2FE6CC3C00C5FB1B /* String+Extensions.swift in Sources */,
 				11355FA82FE64E6F00C5FB1B /* ContentView.swift in Sources */,
+				11355FAA2FE6C8E100C5FB1B /* ProgramDetailView.swift in Sources */,
 				11355FA12FE64DF200C5FB1B /* TVService.swift in Sources */,
 				11355FA22FE64DF200C5FB1B /* GuiaTVApp.swift in Sources */,
 				11355FA32FE64DF200C5FB1B /* TVProgram.swift in Sources */,
