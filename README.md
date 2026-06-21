@@ -1,5 +1,7 @@
 # 📺 TV Guide iOS
 
+[![iOS CI](https://github.com/JamNow7/tv-guide-ios/workflows/iOS%20Tests/badge.svg)](https://github.com/JamNow7/tv-guide-ios/actions)
+
 > **Aplicación SwiftUI profesional con MVVM, SwiftData, Testing y Cache**
 > Nivel: Portafolio Senior iOS Engineer
 
@@ -428,7 +430,17 @@ Este proyecto demuestra experiencia en:
 
 ## 📄 Licencia
 
-Este proyecto es de uso académico/educativo y portafolio profesional.
+Este proyecto tiene licencia MIT - ver archivo [LICENSE](LICENSE) para detalles.
+
+⚠️ **Uso permitido:**
+- ✅ Aprendizaje y referencia
+- ✅ Portafolio y demostración profesional
+- ✅ Modificación para proyectos personales
+
+⚠️ **Uso NO permitido:**
+- ❌ Uso comercial directo
+- ❌ Redistribución como trabajo propio
+- ❌ Uso sin atribución
 
 ---
 
@@ -438,4 +450,8 @@ Este proyecto es de uso académico/educativo y portafolio profesional.
 
 Desarrollado con ❤️ usando SwiftUI, SwiftData y XCTest
 
+[![iOS CI](https://github.com/JamNow7/tv-guide-ios/workflows/iOS%20Tests/badge.svg)](https://github.com/JamNow7/tv-guide-ios/actions)
+
 </div>
+
+
