@@ -187,6 +187,16 @@ enum TVServiceError: LocalizedError {
 
 ---
 
+## 📸 Screenshots
+
+Las capturas de pantalla de la aplicación están disponibles en [`docs/`](docs/):
+- **Buscador.PNG** - Vista de búsqueda de programas
+- **Pais y Canal.PNG** - Vista de filtros por país y canal
+- **GuiaTv.PNG** - Vista principal de la guía
+- **Detalle.PNG** - Vista de detalle de programa
+
+---
+
 ## 🚀 Instalación y Configuración
 
 ### Requisitos Previos
@@ -206,7 +216,7 @@ enum TVServiceError: LocalizedError {
 
 2. **Abrir en Xcode**
    ```bash
-   open "Guía TV.xcodeproj"
+   open "Guía TV.xcworkspace"
    ```
 
 3. **Configurar Target de Tests**
