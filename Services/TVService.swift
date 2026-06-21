@@ -2,64 +2,61 @@
 //  TVService.swift
 //  Guía TV
 //
-//  Created by Claudio Cataldo on 19-06-26.
+//  Servicio de API con manejo de errores profesional y DI
 //
 
 import Foundation
 
-final class TVService {
+// MARK: - Protocol para testabilidad
+
+protocol URLSessionProtocol {
+    func data(from url: URL) async throws -> (Data, URLResponse)
+}
+
+extension URLSession: URLSessionProtocol {}
+
+/// Servicio principal para obtener datos de TV desde TVMaze API
+final class TVService: TVServiceProtocol {
+
+    // MARK: - Configuration
+
+    private static let baseURL = "https://api.tvmaze.com/schedule"
+    private static let timeout: TimeInterval = 10.0
+
+    /// Session abstracta (mockeable)
+    private let session: URLSessionProtocol
+
+    // MARK: - Initialization
+
+    init(session: URLSessionProtocol = URLSession.shared) {
+        self.session = session
+    }
+
+    // MARK: - Public Methods
+
     func fetchSchedule() async throws -> [TVProgram] {
-        let url = URL(string: "https://api.tvmaze.com/schedule")!
 
-        let (data, _) = try await URLSession.shared.data(from: url)
+        guard let url = URL(string: Self.baseURL) else {
+            throw TVServiceError.invalidURL
+        }
 
-        let decoder = JSONDecoder()
+        let (data, response) = try await session.data(from: url)
 
-        let raw = try decoder.decode([TVMazeScheduleItem].self, from: data)
+        guard let httpResponse = response as? HTTPURLResponse else {
+            throw TVServiceError.unknown(URLError(.badServerResponse))
+        }
 
-        return raw.map { TVProgram(from: $0) }
+        guard (200...299).contains(httpResponse.statusCode) else {
+            throw TVServiceError.serverError(statusCode: httpResponse.statusCode)
+        }
+
+        do {
+            let decoder = JSONDecoder()
+            let rawItems = try decoder.decode([TVMazeScheduleItem].self, from: data)
+            return rawItems.map { TVProgram(from: $0) }
+
+        } catch {
+            throw TVServiceError.decodingError
+        }
     }
 }
-
-struct TVMazeScheduleItem: Codable {
-    let id: Int
-    let name: String
-    let airdate: String
-    let airtime: String
-    let summary: String?
-    let show: ShowDTO
-    let type: String?
-    let season: Int?
-    let number: Int?
-    let runtime: Int?
-    let rating: RatingDTO?
-    let image: ImageDTO?
-}
-
-struct ShowDTO: Codable {
-    let name: String
-    let image: ImageDTO?
-    let network: NetworkDTO?
-}
-struct RatingDTO: Codable {
-      let average: Double?
-  }
-
-  struct ImageDTO: Codable {
-      let medium: String?
-      let original: String?
-  }
-
-struct CountryDTO: Codable {
-      let name: String
-      let code: String
-      let timezone: String
-  }
-
-  struct NetworkDTO: Codable {
-      let id: Int
-      let name: String
-      let country: CountryDTO?
-      let officialSite: String?
-  }
-

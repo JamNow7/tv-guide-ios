@@ -16,10 +16,25 @@
 		11355FA82FE64E6F00C5FB1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11355FA62FE64E6F00C5FB1B /* ContentView.swift */; };
 		11355FAA2FE6C8E100C5FB1B /* ProgramDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11355FA92FE6C8DA00C5FB1B /* ProgramDetailView.swift */; };
 		11355FAC2FE6CC3C00C5FB1B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11355FAB2FE6CC3C00C5FB1B /* String+Extensions.swift */; };
+		116568052FE740C600314008 /* TVServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116568042FE740C600314008 /* TVServiceError.swift */; };
+		116568082FE740DB00314008 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116568062FE740DB00314008 /* CacheService.swift */; };
+		116568092FE740DB00314008 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116568072FE740DB00314008 /* DependencyContainer.swift */; };
+		1165680C2FE7415600314008 /* SkeletonLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1165680B2FE7415600314008 /* SkeletonLoadingView.swift */; };
+		1165680D2FE7415600314008 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1165680A2FE7415600314008 /* EmptyStateView.swift */; };
+		1165680E2FE7416000314008 /* TVMazeScheduleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1165680F2FE7416000314008 /* TVMazeScheduleItem.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		11956B6C2FE76BA3004345E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11355F542FE632E700C5FB1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11355F5B2FE632E700C5FB1B;
+			remoteInfo = "Guia TV";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		11355F5C2FE632E700C5FB1B /* Guía TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Guía TV.app"; path = "/Users/claudiocataldo/Desktop/GuiaTv/build/Debug-iphoneos/Guía TV.app"; sourceTree = "<absolute>"; };
 		11355F802FE6483500C5FB1B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		11355F972FE64DF200C5FB1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11355F982FE64DF200C5FB1B /* GuiaTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuiaTVApp.swift; sourceTree = "<group>"; };
@@ -29,6 +44,14 @@
 		11355FA62FE64E6F00C5FB1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		11355FA92FE6C8DA00C5FB1B /* ProgramDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramDetailView.swift; sourceTree = "<group>"; };
 		11355FAB2FE6CC3C00C5FB1B /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		116568042FE740C600314008 /* TVServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVServiceError.swift; sourceTree = "<group>"; };
+		116568062FE740DB00314008 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		116568072FE740DB00314008 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		1165680A2FE7415600314008 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		1165680B2FE7415600314008 /* SkeletonLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadingView.swift; sourceTree = "<group>"; };
+		1165680F2FE7416000314008 /* TVMazeScheduleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMazeScheduleItem.swift; sourceTree = "<group>"; };
+		118FD7BD2FE73C9C0085AF65 /* GuiaTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuiaTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11956B682FE76BA2004345E1 /* GuiaTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuiaTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -37,10 +60,22 @@
 			path = docs;
 			sourceTree = "<group>";
 		};
+		11956B692FE76BA2004345E1 /* GuiaTVTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GuiaTVTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		11355F592FE632E700C5FB1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11956B652FE76BA2004345E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,13 +96,18 @@
 				11355F9C2FE64DF200C5FB1B /* Services */,
 				11355F9E2FE64DF200C5FB1B /* ViewModels */,
 				11355FA72FE64E6F00C5FB1B /* Views */,
+				118FD7BD2FE73C9C0085AF65 /* GuiaTV.app */,
+				11956B682FE76BA2004345E1 /* GuiaTVTests.xctest */,
+				11956B692FE76BA2004345E1 /* GuiaTVTests */,
 			);
 			sourceTree = "<group>";
 		};
 		11355F9A2FE64DF200C5FB1B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				116568042FE740C600314008 /* TVServiceError.swift */,
 				11355F992FE64DF200C5FB1B /* TVProgram.swift */,
+				1165680F2FE7416000314008 /* TVMazeScheduleItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -75,6 +115,8 @@
 		11355F9C2FE64DF200C5FB1B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				116568062FE740DB00314008 /* CacheService.swift */,
+				116568072FE740DB00314008 /* DependencyContainer.swift */,
 				11355F9B2FE64DF200C5FB1B /* TVService.swift */,
 			);
 			path = Services;
@@ -91,6 +133,8 @@
 		11355FA72FE64E6F00C5FB1B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1165680A2FE7415600314008 /* EmptyStateView.swift */,
+				1165680B2FE7415600314008 /* SkeletonLoadingView.swift */,
 				11355FAB2FE6CC3C00C5FB1B /* String+Extensions.swift */,
 				11355FA92FE6C8DA00C5FB1B /* ProgramDetailView.swift */,
 				11355FA62FE64E6F00C5FB1B /* ContentView.swift */,
@@ -101,9 +145,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11355F5B2FE632E700C5FB1B /* Guía TV */ = {
+		11355F5B2FE632E700C5FB1B /* Guia TV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11355F672FE632E900C5FB1B /* Build configuration list for PBXNativeTarget "Guía TV" */;
+			buildConfigurationList = 11355F672FE632E900C5FB1B /* Build configuration list for PBXNativeTarget "Guia TV" */;
 			buildPhases = (
 				11355F582FE632E700C5FB1B /* Sources */,
 				11355F592FE632E700C5FB1B /* Frameworks */,
@@ -116,12 +160,35 @@
 			fileSystemSynchronizedGroups = (
 				11355F822FE649BD00C5FB1B /* docs */,
 			);
-			name = "Guía TV";
+			name = "Guia TV";
 			packageProductDependencies = (
 			);
 			productName = "Guía TV";
-			productReference = 11355F5C2FE632E700C5FB1B /* Guía TV.app */;
+			productReference = 118FD7BD2FE73C9C0085AF65 /* GuiaTV.app */;
 			productType = "com.apple.product-type.application";
+		};
+		11956B672FE76BA2004345E1 /* GuiaTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11956B6E2FE76BA3004345E1 /* Build configuration list for PBXNativeTarget "GuiaTVTests" */;
+			buildPhases = (
+				11956B642FE76BA2004345E1 /* Sources */,
+				11956B652FE76BA2004345E1 /* Frameworks */,
+				11956B662FE76BA2004345E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11956B6D2FE76BA3004345E1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				11956B692FE76BA2004345E1 /* GuiaTVTests */,
+			);
+			name = GuiaTVTests;
+			packageProductDependencies = (
+			);
+			productName = GuiaTVTests;
+			productReference = 11956B682FE76BA2004345E1 /* GuiaTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -135,6 +202,10 @@
 				TargetAttributes = {
 					11355F5B2FE632E700C5FB1B = {
 						CreatedOnToolsVersion = 16.4;
+					};
+					11956B672FE76BA2004345E1 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 11355F5B2FE632E700C5FB1B;
 					};
 				};
 			};
@@ -152,7 +223,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11355F5B2FE632E700C5FB1B /* Guía TV */,
+				11355F5B2FE632E700C5FB1B /* Guia TV */,
+				11956B672FE76BA2004345E1 /* GuiaTVTests */,
 			);
 		};
 /* End PBXProject section */
@@ -167,6 +239,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11956B662FE76BA2004345E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -176,15 +255,36 @@
 			files = (
 				11355FA02FE64DF200C5FB1B /* TVGuideViewModel.swift in Sources */,
 				11355FAC2FE6CC3C00C5FB1B /* String+Extensions.swift in Sources */,
+				1165680C2FE7415600314008 /* SkeletonLoadingView.swift in Sources */,
+				1165680D2FE7415600314008 /* EmptyStateView.swift in Sources */,
 				11355FA82FE64E6F00C5FB1B /* ContentView.swift in Sources */,
 				11355FAA2FE6C8E100C5FB1B /* ProgramDetailView.swift in Sources */,
+				116568052FE740C600314008 /* TVServiceError.swift in Sources */,
+				116568082FE740DB00314008 /* CacheService.swift in Sources */,
+				116568092FE740DB00314008 /* DependencyContainer.swift in Sources */,
 				11355FA12FE64DF200C5FB1B /* TVService.swift in Sources */,
 				11355FA22FE64DF200C5FB1B /* GuiaTVApp.swift in Sources */,
 				11355FA32FE64DF200C5FB1B /* TVProgram.swift in Sources */,
+				1165680E2FE7416000314008 /* TVMazeScheduleItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11956B642FE76BA2004345E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11956B6D2FE76BA3004345E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11355F5B2FE632E700C5FB1B /* Guia TV */;
+			targetProxy = 11956B6C2FE76BA3004345E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		11355F652FE632E900C5FB1B /* Debug */ = {
@@ -329,7 +429,8 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cl.claudiocat.Gui-a-TV";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = GuiaTV;
+				PRODUCT_NAME = GuiaTV;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -357,10 +458,47 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cl.claudiocat.Gui-a-TV";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = GuiaTV;
+				PRODUCT_NAME = GuiaTV;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11956B6F2FE76BA3004345E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JBGR53Y6QY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cl.claudiocat.GuiaTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuiaTV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GuiaTV";
+			};
+			name = Debug;
+		};
+		11956B702FE76BA3004345E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JBGR53Y6QY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cl.claudiocat.GuiaTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuiaTV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GuiaTV";
 			};
 			name = Release;
 		};
@@ -376,11 +514,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11355F672FE632E900C5FB1B /* Build configuration list for PBXNativeTarget "Guía TV" */ = {
+		11355F672FE632E900C5FB1B /* Build configuration list for PBXNativeTarget "Guia TV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11355F682FE632E900C5FB1B /* Debug */,
 				11355F692FE632E900C5FB1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11956B6E2FE76BA3004345E1 /* Build configuration list for PBXNativeTarget "GuiaTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11956B6F2FE76BA3004345E1 /* Debug */,
+				11956B702FE76BA3004345E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
