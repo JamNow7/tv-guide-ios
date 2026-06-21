@@ -21,6 +21,6 @@ jobs:
         run: |
           xcodebuild test \
           -project "Guía TV.xcodeproj" \
-          -scheme "GuiaTV" \
+          -scheme "Guía TV" \
           -destination "platform=iOS Simulator,name=iPhone 15,OS=latest" \
           CODE_SIGNING_ALLOWED=NO
